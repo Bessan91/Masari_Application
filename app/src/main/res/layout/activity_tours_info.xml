@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tours_info">
+
+    <ImageView
+        android:id="@+id/info_img"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/p1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fitsSystemWindows="true"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_img"
+        android:layout_marginTop="43dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="مسار بتير"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="يبدأ من منطقة المخرور في بيت جالا وينتهي في بلدة بتير، مروراً بالمناظر الطبيعية وعيون المياه والمدرجات المائية، وصولاً إلى سكة الحديد، وهم من المسارات العائلية السهلة ومسافته 5 كم."
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/featuresTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="المميزات:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/features"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="مناسب للأطفال والمجموعات."
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="121dp">
+
+                <Button
+                    android:id="@+id/book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:text="احجز المسار"
+                    android:textSize="20sp" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/favLottie"
+                    android:layout_width="136dp"
+                    android:layout_height="118dp"
+                    android:layout_marginRight="-37dp"
+                    android:layout_toLeftOf="@+id/book"
+                    app:lottie_rawRes="@raw/like" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

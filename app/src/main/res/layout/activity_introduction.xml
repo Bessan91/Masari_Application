@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".IntroductionActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/intro" />
+
+    <ViewFlipper
+        android:id="@+id/flip"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/imageViewLogo">
+
+    </ViewFlipper>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_below="@+id/flip"
+        android:onClick="login"
+        android:text="تسجيل الدخول"
+        app:backgroundTint="#98B7E4"
+        style="@style/btnStyle" />
+
+    <Button
+        android:id="@+id/signup"
+        style="@style/btnStyle"
+        android:layout_below="@+id/login"
+        android:onClick="sign"
+        android:text="إنشاء حساب "
+        app:backgroundTint="#98B7E4" />
+
+
+</RelativeLayout>

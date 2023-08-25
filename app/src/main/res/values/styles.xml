@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyBackGround">
+        <item name="android:background">#757575</item>
+    </style>
+    <style name="editTxt">
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textColorHint">#673D3D</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:ems">10</item>
+
+    </style>
+
+    <style name="btnStyle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+    <style name="btnStyle0" parent="btnStyle">
+        <item name="android:textColor">#7295C6</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+</resources>

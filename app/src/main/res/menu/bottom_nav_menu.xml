@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fav"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="المفضلة" />
+    <item
+        android:id="@+id/mainMenu"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="الصفحة الرئيسية" />
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_baseline_account_box_24"
+        android:title="حسابي" />
+</menu>

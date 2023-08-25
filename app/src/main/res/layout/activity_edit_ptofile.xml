@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#98B7E4"
+    tools:context=".editPtofile">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/personLottie"
+        android:layout_width="357dp"
+        android:layout_height="251dp"
+        android:layout_marginBottom="30dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/person" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/btnStyle0"
+        android:layout_width="378dp"
+        android:layout_height="45dp"
+        android:background="@drawable/background2"
+        android:backgroundTint="#CEF4F2F2"
+        android:gravity="center"
+        android:text=" تعديل بيانات حاسبك الشخصي"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349" />
+
+    <EditText
+        android:id="@+id/edit_pPass"
+        style="@style/btnStyle0"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_background_green1"
+        android:backgroundTint="#CEF4F2F2"
+        android:gravity="center"
+        android:hint=" تأكيد كلمة السر "
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edit_chPass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_chPass"
+        app:layout_constraintTop_toBottomOf="@+id/edit_chPass"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_chPass"
+        style="@style/btnStyle0"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_background_green1"
+        android:backgroundTint="#CEF4F2F2"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:hint="كلمة السر"
+        app:layout_constraintEnd_toEndOf="@+id/edit_phone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_phone"
+        app:layout_constraintTop_toBottomOf="@+id/edit_phone"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_pName"
+        style="@style/btnStyle0"
+        android:background="@drawable/button_background_green1"
+        android:backgroundTint="#CEF4F2F2"
+        android:gravity="center"
+        android:hint="اسم المستخدم "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/personLottie"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <EditText
+
+        android:id="@+id/edit_phone"
+        style="@style/btnStyle0"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/button_background_green1"
+        android:backgroundTint="#CEF4F2F2"
+        android:gravity="center"
+        android:hint="رقم الهاتف"
+        app:layout_constraintEnd_toEndOf="@+id/edit_pName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_pName"
+        app:layout_constraintTop_toTopOf="@+id/personLottie"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fitsSystemWindows="true"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <Button
+        android:id="@+id/btn_pEdit"
+        style="@style/btnStyle"
+        android:background="@drawable/button_background_green1"
+        android:backgroundTint="#CEF4F2F2"
+        android:gravity="center"
+        android:onClick="btn_pEdit"
+        android:text="تعديل "
+        app:layout_constraintBottom_toTopOf="@+id/navBar"
+        app:layout_constraintEnd_toEndOf="@+id/edit_pPass"
+        app:layout_constraintStart_toStartOf="@+id/edit_pPass"
+        app:layout_constraintTop_toBottomOf="@+id/edit_pPass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
