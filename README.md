@@ -1,6 +1,6 @@
 # Masari_Application by Android 
 <h2>About this project : </h2>
-<p>Masari is an application that has a hiking tour and can all register and make a booking for this tour -->  </p>
+<p>Masari is an application that has a hiking tour and can all register and make a booking for this tour  </p>
 <h3> Technology :
   </h3>
 
