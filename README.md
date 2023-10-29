@@ -15,6 +15,9 @@
     <img width="188" alt="image" src="https://github.com/Bessan91/Masari_Application/assets/109364643/a97d0247-2bbf-4a9b-8282-bb427c4a672f">
 
   </li>
+  <li><p>SignUp And signIn </p>
+    <img width="176" alt="image" src="https://github.com/Bessan91/Masari_Application/assets/109364643/44849213-72d3-44a4-9529-b03f631c2a6b">
+</li>
 </ul>
 <h5> For more features click on the link below  </h5>
 https://share.descript.com/view/bI0snLySREM
